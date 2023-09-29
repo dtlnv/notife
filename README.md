@@ -6,11 +6,17 @@
   <img src="preview.png" alt="Scratch Map App" /> 
 </p>
 
-Notife is a command-line tool for displaying notifications on different operating systems.
+Notife is a command-line tool for displaying notifications on different operating systems. It's useful for notifying you when a long-running command has completed.
 
 ## Installation
 
+Global installation:
+
 `npm install notife -g`
+
+Or local installation:
+
+`npm install notife -save-dev`
 
 ## Usage
 
@@ -20,12 +26,14 @@ After installation, you can use the `notife` command from any directory or npm-c
 npx notife 'Hello World'
 ```
 
-Package.json:
+Add to the command in package.json:
 
 ```json
 {
   "scripts": {
+    ...
     "build": "npm run build && npx notife 'Build complete!'"
+    ...
   }
 }
 ```
