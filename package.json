@@ -1,0 +1,26 @@
+{
+  "name": "notife",
+  "version": "1.0.0",
+  "description": "A system notification tool for any OS.",
+  "keywords": [
+    "notifications",
+    "system notifications",
+    "alert",
+    "npm notifications",
+    "command line notifications"
+  ],
+  "scripts": {
+    "test-local": "./notife.sh 'Build complete!'",
+    "test-global": "npx notife 'Hello Global World'"
+  },
+  "author": "dtlnv",
+  "bin": {
+    "notife": "./notife.sh"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtlnv/notife"
+  },
+  "private": false
+}
