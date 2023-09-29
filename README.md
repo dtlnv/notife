@@ -17,7 +17,7 @@ Notife is a command-line tool for displaying notifications on different operatin
 After installation, you can use the `notife` command from any directory or npm-command. Here's an example:
 
 ```bash
-npx notife "Hello World"
+npx notife 'Hello World'
 ```
 
 Package.json:
@@ -34,9 +34,9 @@ This will display a notification with the message after the build is complete.
 
 ## Supported Operating Systems
 
-- macOS: Uses osascript to display native notifications.
-- Linux: Uses notify-send for notifications. Make sure it's installed on your system.
-- Windows: Uses powershell.exe to display notifications. Ensure PowerShell is available.
+- macOS: Uses `osascript` to display native notifications.
+- Linux: Uses `notify-send` for notifications. Make sure it's installed on your system.
+- Windows: Uses `powershell.exe` to display notifications. Ensure PowerShell is available.
 
 ## Contributing
 

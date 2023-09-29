@@ -7,7 +7,12 @@
     "system notifications",
     "alert",
     "npm notifications",
-    "command line notifications"
+    "command line notifications",
+    "npm alert",
+    "command line alert",
+    "system alert",
+    "npx notification",
+    "npx alert"
   ],
   "scripts": {
     "test-local": "./notife.sh 'Build complete!'",
