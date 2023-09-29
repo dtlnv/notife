@@ -4,7 +4,7 @@ now=$(date +"%T")
 
 case "$OSTYPE" in
   darwin*)  
-    osascript -e "display notification \"$1\" with title \"🕒 09:34:51\" sound name \"Default\""
+    osascript -e "display notification \"$1\" with title \"🕒 $now\" sound name \"Default\""
     ;;
   linux*)  
     if command -v notify-send &> /dev/null; then
