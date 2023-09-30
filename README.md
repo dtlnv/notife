@@ -14,7 +14,7 @@ Global installation:
 
 `npm install notife -g`
 
-Or local installation:
+Or local installation in your project:
 
 `npm install notife -save-dev`
 
@@ -32,7 +32,7 @@ Add to the command in package.json:
 {
   "scripts": {
     ...
-    "build": "npm run build && npx notife 'Build complete!'"
+    "build": "webpack --config webpack.config.js && npx notife 'Build complete!'"
     ...
   }
 }
@@ -43,7 +43,7 @@ This will display a notification with the message after the build is complete.
 ## Supported Operating Systems
 
 - macOS: Uses `osascript` to display native notifications.
-- Linux: Uses `notify-send` for notifications. Make sure it's installed on your system.
+- Linux: Uses `notify-send` to display notifications. Make sure it's installed on your system.
 - Windows: Uses `powershell.exe` to display notifications. Ensure PowerShell is available.
 
 ## Contributing
@@ -73,7 +73,3 @@ If you'd like to contribute code to Notife, please follow these steps:
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-If you have any questions or feedback, please don't hesitate to contact me: timtemnov@pm.me.
