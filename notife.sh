@@ -15,7 +15,7 @@ case "$OSTYPE" in
     ;;
   msys*|cygwin*|mingw*)
     if command -v powershell.exe &> /dev/null; then
-      powershell.exe -Command "[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null; $xml = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02); $xml.GetElementsByTagName('text').item(0).AppendChild($xml.CreateTextNode('🕒 $now')); $xml.GetElementsByTagName('text').item(1).AppendChild($xml.CreateTextNode('$1')); $toast = [Windows.UI.Notifications.ToastNotification]::new($xml); [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier('notification-call').Show($toast)"
+      powershell.exe -Command "[Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] | Out-Null; $xml = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText02); $xml.GetElementsByTagName('text').item(0).AppendChild($xml.CreateTextNode('🕒 $now')); $xml.GetElementsByTagName('text').item(1).AppendChild($xml.CreateTextNode('$1')); $toast = [Windows.UI.Notifications.ToastNotification]::new($xml); [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNotifier('notife').Show($toast)"
     else
       echo "powershell.exe is not installed. Please install it to show notifications on Windows."
     fi
