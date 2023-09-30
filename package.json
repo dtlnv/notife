@@ -1,6 +1,6 @@
 {
   "name": "notife",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A system notification tool for any OS.",
   "keywords": [
     "notifications",
@@ -22,6 +22,11 @@
   "bin": {
     "notife": "./notife.sh"
   },
+  "files": [
+    "notife.sh",
+    "README.md",
+    "package.json"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
